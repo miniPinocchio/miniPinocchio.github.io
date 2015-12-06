@@ -18,7 +18,7 @@
     <link rel="alternative" href="/atom.xml" title="匹诺曹的世界" type="application/atom+xml">
   
   
-    <link rel="icon" href="/author.png">
+    <link rel="icon" href="/author.ico">
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
@@ -120,7 +120,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/开始/" style="font-size: 10px;">开始</a> <a href="/tags/我/" style="font-size: 10px;">我</a> <a href="/tags/日记/" style="font-size: 10px;">日记</a>
+						<a href="/tags/MarkDown/" style="font-size: 10px;">MarkDown</a> <a href="/tags/开始/" style="font-size: 10px;">开始</a> <a href="/tags/我/" style="font-size: 10px;">我</a> <a href="/tags/日记/" style="font-size: 10px;">日记</a>
 					</div>
 				</section>
 				
@@ -143,7 +143,7 @@
 				
 				<section class="switch-part switch-part4">
 				
-					<div id="js-aboutme">一如变成深似海 从此节操是路人</div>
+					<div id="js-aboutme">一入编程深似海 从此节操是路人</div>
 				</section>
 				
 			</div>
@@ -197,112 +197,6 @@
 	</div>
 </nav>
       <div class="body-wrap">
-  
-    <article id="post-我的" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/05/我的/" class="article-date">
-  	<time datetime="2015-12-05T14:53:48.000Z" itemprop="datePublished">2015-12-05</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/05/我的/">我的</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>MarkDown测试文章。</p>
-<h2 id="标题">标题</h2><p>这是”介绍“这一届</p>
-<h3 id="这是三级标题">这是三级标题</h3><hr>
-<h2 id="二级标题">二级标题</h2><ul>
-<li>列表项1</li>
-<li>列表项2</li>
-</ul>
-<p><br></p>
-<ol>
-<li>列表项1</li>
-<li>列表项2</li>
-</ol>
-<h2 id="引用">引用</h2><blockquote>
-<p>好好学习 天天向上 ——某人</p>
-</blockquote>
-<hr>
-<h2 id="表格">表格</h2><table>
-<thead>
-<tr>
-<th>姓名</th>
-<th>收入</th>
-<th>年龄</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>阿班</td>
-<td>$100</td>
-<td>20</td>
-</tr>
-</tbody>
-</table>
-<h2 id="代码">代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//开始录制</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">startRecord</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(mr == <span class="keyword">null</span>)&#123;</span><br><span class="line">            File dir = <span class="keyword">new</span> File(Environment.getExternalStorageDirectory(),<span class="string">"sounds"</span>);</span><br><span class="line">            <span class="keyword">if</span>(!dir.exists())&#123;</span><br><span class="line">                dir.mkdirs();</span><br><span class="line">            &#125;</span><br><span class="line">            File soundFile = <span class="keyword">new</span> File(dir,System.currentTimeMillis()+<span class="string">".amr"</span>);</span><br><span class="line">            <span class="keyword">if</span>(!soundFile.exists())&#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    soundFile.createNewFile();</span><br><span class="line">                &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">            mr = <span class="keyword">new</span> MediaRecorder();</span><br><span class="line">            mr.setAudioSource(MediaRecorder.AudioSource.MIC);  <span class="comment">//音频输入源</span></span><br><span class="line">            mr.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);   <span class="comment">//设置输出格式</span></span><br><span class="line">            mr.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);   <span class="comment">//设置编码格式</span></span><br><span class="line">            mr.setOutputFile(soundFile.getAbsolutePath());</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                mr.prepare();</span><br><span class="line">                mr.start();  <span class="comment">//开始录制</span></span><br><span class="line">            &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="公式">公式</h2><p>我是行内公式 $\varGamma(x) = \sum_(i=0)^(N)f_i(x)$。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
- 
-
-
-
-
-
-    
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-        <script>
-        var yiliaConfig = {
-        fancybox: true,
-        mathjax: true,
-        animate: true,
-        isHome: true,
-        isPost: false,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        open_in_new: false
-        }
-        </script>
-     
-
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -430,6 +324,123 @@
       
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开始/">开始</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/我/">我</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日记/">日记</a></li></ul>
+	</div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+ 
+
+
+
+
+
+    
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+        <script>
+        var yiliaConfig = {
+        fancybox: true,
+        mathjax: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        open_in_new: false
+        }
+        </script>
+     
+
+  
+    <article id="post-我的" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/05/07/我的/" class="article-date">
+  	<time datetime="2014-05-07T10:44:12.000Z" itemprop="datePublished">2014-05-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/05/07/我的/">新的开始</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <excerpt in="" index="" |="" 这是一篇关于markdown的文章=""> 
+
+<p>title: 我的<br>date: 2015-12-05 22:53:48</p>
+<h2 id="tags:">tags:</h2><p>MarkDown测试文章。</p>
+<h2 id="标题">标题</h2><p>这是”介绍“这一届</p>
+<h3 id="这是三级标题">这是三级标题</h3><hr>
+<h2 id="二级标题">二级标题</h2><ul>
+<li>列表项1</li>
+<li>列表项2</li>
+</ul>
+<p><br></p>
+<ol>
+<li>列表项1</li>
+<li>列表项2</li>
+</ol>
+<h2 id="引用">引用</h2><blockquote>
+<p>好好学习 天天向上 ——某人</p>
+</blockquote>
+<hr>
+<h2 id="表格">表格</h2><table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>收入</th>
+<th>年龄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阿班</td>
+<td>$100</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="代码">代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//开始录制</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">startRecord</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(mr == <span class="keyword">null</span>)&#123;</span><br><span class="line">            File dir = <span class="keyword">new</span> File(Environment.getExternalStorageDirectory(),<span class="string">"sounds"</span>);</span><br><span class="line">            <span class="keyword">if</span>(!dir.exists())&#123;</span><br><span class="line">                dir.mkdirs();</span><br><span class="line">            &#125;</span><br><span class="line">            File soundFile = <span class="keyword">new</span> File(dir,System.currentTimeMillis()+<span class="string">".amr"</span>);</span><br><span class="line">            <span class="keyword">if</span>(!soundFile.exists())&#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    soundFile.createNewFile();</span><br><span class="line">                &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">            mr = <span class="keyword">new</span> MediaRecorder();</span><br><span class="line">            mr.setAudioSource(MediaRecorder.AudioSource.MIC);  <span class="comment">//音频输入源</span></span><br><span class="line">            mr.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);   <span class="comment">//设置输出格式</span></span><br><span class="line">            mr.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);   <span class="comment">//设置编码格式</span></span><br><span class="line">            mr.setOutputFile(soundFile.getAbsolutePath());</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                mr.prepare();</span><br><span class="line">                mr.start();  <span class="comment">//开始录制</span></span><br><span class="line">            &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="公式">公式</h2><p>我是行内公式 $\varGamma(x) = \sum_(i=0)^(N)f_i(x)$。</p>
+</excerpt>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/日志/">日志</a>
+	</div>
+
+
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MarkDown/">MarkDown</a></li></ul>
 	</div>
 
       
